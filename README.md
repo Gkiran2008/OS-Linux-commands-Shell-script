@@ -373,15 +373,19 @@ seq 2 | sed '2i hello'
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
+![{D49B6805-1EB3-49A1-8958-1180C97576E6}](https://github.com/user-attachments/assets/828dca04-68f3-43d5-8d67-fbe871c7ed02)
 
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![{F78F4054-FDA6-4DC7-9D95-6C30E7F56DD8}](https://github.com/user-attachments/assets/848bbb78-10ac-45ab-bc60-65b9ece1ed13)
 
 
 sed -n '2,4{s/$/*/;p}' file23
+
+![{D07FB111-3F6E-4F13-93C0-136A2370CD19}](https://github.com/user-attachments/assets/21e74247-3aa0-4777-995d-8b073e75d8e9)
 
 
 #Sorting File content
@@ -396,6 +400,8 @@ cat > file21
 sort file21
 ## OUTPUT
 
+![{4C23494C-5152-4945-A3C3-50C6BD12C0F9}](https://github.com/user-attachments/assets/9716b8b5-66ac-4ed5-8b80-8ec4c5fb4fe5)
+
 
 cat > file22
 ```
@@ -409,12 +415,15 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![{D906088F-FB42-4AED-83FF-1A2D0FA27D55}](https://github.com/user-attachments/assets/a0ba6d1b-5a97-4d33-8555-bdd287dc4675)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+
+![{9E34A979-90C2-442D-B685-8C440206D250}](https://github.com/user-attachments/assets/4cf093ea-8bab-49a1-a972-2ed70c59f200)
 
 cat < urllist.txt
 ```
@@ -432,16 +441,21 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![{FCDE3280-14CE-466A-8C8C-95784E094CF7}](https://github.com/user-attachments/assets/c04e4f42-acff-44e6-a558-f1a83271aca4)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+
+![{8858A705-5F18-42B9-91A7-1053D2B6E73D}](https://github.com/user-attachments/assets/2130aa13-210b-467b-9991-ed57f4e820f1)
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+
+![{463C6A23-32B2-45DD-8E04-D89577CCECFE}](https://github.com/user-attachments/assets/5e64b391-2ccb-4fff-8094-4824cedcc8b9)
 
 
 mkdir backupdir
@@ -451,17 +465,28 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![{B832D31C-F858-4796-B6DB-1D6F88BB7865}](https://github.com/user-attachments/assets/971798ce-0c2a-412b-858e-a5de62b92cb4)
+
+
 
 tar -xvf backup.tar
 ## OUTPUT
+
+![{2365E49F-15AB-4107-81CF-BA49A53898D6}](https://github.com/user-attachments/assets/487d1718-1a77-4a9f-be04-7039374a3c78)
+
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
+
+![{62BE3A61-1F82-4E3F-AA9B-11781D0EC646}](https://github.com/user-attachments/assets/0176c8d2-0594-4a95-9050-73cb37a40dd4)
+
+
  
 gunzip backup.tar.gz
 ## OUTPUT
+
 
  
 # Shell Script
