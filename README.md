@@ -498,6 +498,8 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 
+
+
  
 cat << stop > herecheck.txt
 ```
